@@ -1,0 +1,24 @@
+{
+  "name": "the-hot-door",
+  "version": "1.0.0",
+  "description": "This is a Basic Express Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GowthamAnbu/the-hot-door"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs"
+  ],
+  "author": "Gowtham Anbu",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "~2.4.1",
+    "express": "~4.16.3",
+    "morgan": "~1.9.0"
+  }
+}
