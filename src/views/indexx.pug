@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    title Index Really ?
+    link(rel="stylesheet" href="css/bootstrap.min.css")
+  body(calss=['customClass'])
+    h1= header
+    | this is just a stupid Body  
+    ol
+      each val in list
+        li= val
+    script(src="js/jquery.slim.min.js")
+    script(src="js/popper.min.js")
+    script(src="js/bootstrap.min.js")

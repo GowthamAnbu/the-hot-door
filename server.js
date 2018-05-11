@@ -14,6 +14,9 @@ app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist
 app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')));
 app.use('/js', express.static(path.join(__dirname, 'node_modules/jquery/dist')));
 
-app.get('/', (request, response) => response.sendFile(path.join(__dirname, '/views/index.html')));
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
+app.get('/', (request, response) => response.render('index', { title: 'Story Board' }));
 
 app.listen(port, () => debug(`listening on http://localhost:${chalk.green(port)}`));
